@@ -1,0 +1,140 @@
+@keyframes headingSquish {
+    0% {margin: 30px 50%;}
+    50% {margin: 30px 10%;}
+    100% {margin: 30px 40%;}
+}
+
+@keyframes newsScroll {
+    0% {left: 100%;}
+    100% {left: -100%;}
+}
+@keyframes comicBlink {
+    0% {color: black;}
+    50% {color: darkred;}
+    100% {color: black;}
+}
+
+
+body {
+    background-color: #ffffff;
+    color: #542c82;
+    padding: 0;
+    margin: 0
+}
+
+#news_div {
+    border: solid;
+    border-width: 0 0 3px 0;
+    background-color: #a2ff80;
+    margin: 0;
+}
+#news {
+    color: #542c82;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 100%;
+    width: min-content;
+    overflow: hidden;
+    animation-name: newsScroll;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    white-space: nowrap;
+}
+#news a {
+    color: #542c82;
+}
+
+#ocomic_div {
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    border: solid black;
+    border-width: 0 0 3px 0;
+}
+#ocomic_div p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: UnifrakturCook;
+    color: black;
+    font-size: larger;
+}
+#ocomic_div p a {
+    color: black;
+    animation-name: comicBlink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#ocomic_div span {
+    font-family: sans-serif;
+    font-size: medium;
+    position: relative;
+    left: 2px;
+    top: 6px;
+}
+
+
+#h1background {
+    background-color: #7de8e8;
+    text-align: center;
+    padding: 0;
+    margin: 30px 40%;
+    animation-name: headingSquish;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.cornerh1 {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    text-align: right;
+    font-size: 60px;
+    padding: 0;
+    font-family: "Monsieur La Doulaise";
+    text-shadow: 2px 2px;
+}
+
+#constructiondiv {
+    color: #542c82;
+    text-align: center;
+    background-color: #ffccff;
+    margin: auto 25%;
+    border: solid 4px;
+}
+.construction {
+    display: flex;
+}
+#constructionp {
+    display: inline;
+    margin: 16px 0;
+    border: solid;
+    text-align: center;
+}
+
+#worm1 {
+    width: 80px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#worm2 {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+#meowldiv {
+    border: solid;
+}
+
+#meowl {
+    display: block;
+    margin: 10px auto;
+    border: solid;
+}

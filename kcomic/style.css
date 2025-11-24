@@ -1,0 +1,104 @@
+body {
+    margin: 0px;
+    background-color: #0a0202;
+    text-align: center;
+ }
+            
+header {
+    width: 100%;
+}
+            
+h1 {
+    background-color: #390808;
+    margin: auto;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Savate", sans-serif;
+    font-weight: 1000;
+    text-decoration: underline wavy;
+    color: #b74949;
+}
+
+.evilwarning {
+    font-family: "Lacquer";
+    color: #390808;
+    font-size: 60px;
+}
+            
+nav {
+    background-color: #2C0C0C;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+nav a {
+    color: #b74949;
+    padding: 0px 7px;
+    font-size: 22px;
+    flex-grow: 1;
+}
+            
+p {
+    text-align: center;
+    font-family: "DM Sans";
+}
+
+main p{
+   color: #b74949; 
+}
+            
+#buttons {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+}
+#buttons button {
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #390808;
+    margin: 5px auto;
+    font-family: "DM Sans";
+    color: #b74949;
+}
+#buttons button:hover {
+    background-color: #773324;
+}
+#buttons button:active {
+    background-color: #7517a6;
+}
+.mediumb {
+    font-size: 30px;
+    width: 300px;
+}
+.bigb {
+    font-size: 40px;
+    width: 350px;
+}
+.smallb {
+    font-size: 20px;
+    width: 200px;
+}
+            
+footer {
+    background-color: #390808;
+    padding: 13px;
+    width: auto;
+    margin: 26px 0px -10px 0px;
+}
+footer p {
+    font-family: serif;
+    color: #b74949;
+}
+
+.comicpages {
+    width: 44%;
+}
+
+#archivelist li {
+    color: #b74949;
+}
+a {
+    color: #b74949;
+}
