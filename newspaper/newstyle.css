@@ -1,7 +1,7 @@
 body {
     background-color: #d1d1d1;
     color: #393939;
-    text-align: right;
+    text-align: left;
 }
 hr {
     color: #393939;
@@ -21,6 +21,36 @@ header h3 {
     text-align: center;
     font-size: 2em;
 }
+
+
+/* everyting to do with the main contatiner and its contents */
+main {
+    display: flex;
+    justify-content: center;
+}
+#main-left {
+    border: solid;
+    width: 15%;
+    margin: 0 10px;
+}
+
+#main-center {
+    border: solid;
+    width: 70%;
+    margin: 0 10px;
+    padding: 5px;
+}
+#main-center h3 {
+    text-align: center;
+}
+
+#main-right {
+    border: solid;
+    width: 15%;
+    margin: 0 10px;
+}
+/* everyting to do with the main contatiner and its contents */
+
 
 footer {
     text-align: center;
