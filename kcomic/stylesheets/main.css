@@ -12,3 +12,8 @@ h1 {
 main {
     border: solid;
 }
+
+#artisitcNudity {
+    color: white;
+    background-color: red;
+}
