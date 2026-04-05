@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Canterbury;
+    src: url(/kcomic/FONTS/canterbury/Canterbury.woff2);
+}
+body {
+    background-color: black;
+    text-align: center;
+}
+h1 {
+    color: darkred;
+    font-family: Canterbury;
+    font-weight: normal;
+    font-size: 90px;
+    margin: 20px;
+}
+#disclamerBox {
+    margin: 20px auto;
+    width: fit-content;
+    border: solid darkred;
+}
+p {
+    color: darkred;
+}
+button {
+    margin: auto;
+    padding: 0;
+    border: solid black;
+    color: black;
+    background-image: linear-gradient(to bottom, darkred, black);
+    font-size: 50px;
+    font-family: Canterbury;
+    font-weight: normal;
+    transition-property: background-image;
+    transition-duration: 1s;
+}
+button:hover {
+    background-image: linear-gradient(to bottom, black, darkred);
+}
+
+
+
+
