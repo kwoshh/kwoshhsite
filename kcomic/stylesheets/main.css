@@ -13,7 +13,14 @@ main {
     border: solid;
 }
 
-#artisitcNudity {
-    color: white;
-    background-color: red;
+header {
+    border: solid;
 }
+
+.headerLetters {
+    width: 10%;
+}
+#leftA {
+    width: 15%;
+}
+
