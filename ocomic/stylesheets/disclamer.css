@@ -21,11 +21,12 @@ h1 {
 p {
     color: darkred;
 }
-button {
+a {
     margin: auto;
     padding: 0;
     border: solid black;
     color: black;
+    text-decoration: none;
     background-image: linear-gradient(to bottom, darkred, black);
     font-size: 50px;
     font-family: Canterbury;
@@ -33,7 +34,7 @@ button {
     transition-property: background-image;
     transition-duration: 1s;
 }
-button:hover {
+a:hover {
     background-image: linear-gradient(to bottom, black, darkred);
 }
 

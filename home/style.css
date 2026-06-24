@@ -1,0 +1,49 @@
+@keyframes paragraphMarquee {
+    to {transform: translateX(-100%);}
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.marquee{
+    border-bottom: dashed 3px red;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: black;
+
+    .marquee-paragraph {
+        animation: paragraphMarquee linear 10s infinite;
+        padding: 0 5px;
+        margin: 0;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.basic-button {
+    color: black;
+    font-size: 1.3em;
+    text-decoration: none;
+    border: solid 3px black;
+    background-color: lightgray;
+    padding: 5px;
+    box-shadow: 3px 3px 5px;
+}
+basic-button:hover {
+    font-size: 1.4em;
+    background-color: #c8c8c8;
+}
+
+img {
+    width: 100px;
+    margin: 40px;
+}

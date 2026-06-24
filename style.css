@@ -1,21 +1,66 @@
+@keyframes flashDisapear {
+    0% {opacity: 0;}
+    1% {opacity: 1; color: red;}
+    2% {opacity: 0;}
+    3% {opacity: 1; color: black;}
+    4% {opacity: 0;}
+    5% {opacity: 1; color: red;}
+    6% {opacity: 0;}
+    7% {opacity: 1; color: black;}
+    8% {opacity: 0;}
+    9% {opacity: 1; color: red;}
+    10% {opacity: 0;}
+    11% {opacity: 0;}
+    12% {opacity: 1; color: red;}
+    13% {opacity: 0;}
+    14% {opacity: 1; color: black;}
+    15% {opacity: 0;}
+    16% {opacity: 1; color: red;}
+    17% {opacity: 0;}
+    18% {opacity: 1; color: black;}
+    19% {opacity: 0;}
+    20% {opacity: 1; color: red;}
+    21% {opacity: 0;}
+}
 body {
-    text-align: center;
+    background-color: black;
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
-    font-size: 3em;
-    margin: 50px 50px 0;
+#computer-container {
+    border: 6px solid;
+    height: auto;
 }
-
-nav a{
-    text-decoration: none;
-    border: 3px solid black;
-    color: black;
-    padding: 5px;
-    margin: 0 10px;
-    background-color: lightgray;
-    box-shadow: 3px 3px 5px
-}
-nav a:hover {
-    background-color: lightgoldenrodyellow;
+#img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 97vh;
+    /* border: 5px dashed red; */
+    a {
+        width: min-content;
+        margin: auto;
+        text-align: center;
+        /* border: 5px dashed red; */
+        img {
+            width: 235px;
+            margin: auto;
+            /* border: 5px dashed red; */
+        }
+    }
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center ;
+        font-size: 170%;
+        overflow: auto;
+        /* border: 5px dashed red; */
+        width: 100%;
+        opacity: 0;
+        animation-name: flashDisapear;
+        animation-duration: 6s;
+    }
 }

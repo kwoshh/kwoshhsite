@@ -5,13 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>kwoshhsite</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('click', () => {
+            document.getElementById('omnipig').play();
+        }, { once: true }); // Only triggers once
+    </script>
 </head>
 <body>
-	<h1>REDESIGN IN THE WORKS!!</h1>
-    <p>it will look beautiful soon</p>
-    <nav>
-        <a href="/newspaper/index.html">newspaper</a>
-        <a href="/ocomic/index.html">OCOMIC</a>
-    </nav>
+    <div id="img-container">
+        <a href="/home/index.html"><img id="computer" src="IMAGES/START/computer2.png"></a>
+        <h2>ENABLE AUDIO AUTOPLAY OR CLICK BLACK TO HEAR MUSIC</h2>
+    </div>
+    <audio id="omnipig" autoplay>
+        <source src="SOUNDS/Omnipig.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
