@@ -1,26 +1,76 @@
+@keyframes hoverA {
+    from {top: 15px;}
+    to {top: 30px;}
+}
+@keyframes hoverLeftComma {
+    from {top: 45px;}
+    to {top: 60px;}
+}
+@keyframes hoverW {
+    from {top: 0px;}
+    to {top: 15px;}
+}
+@keyframes hoverRightComma {
+    from {top: 30px;}
+    to {top: 45px;}
+}
 body {
     text-align: center;
     background-color: black;
     color: darkred;
 }
 
-h1 {
-    margin: 60px;
-    font-size: 50px;
-}
-
-main {
-    border: solid;
-}
-
 header {
-    border: solid;
+    /*border: dashed darkred;*/
 }
-
-.headerLetters {
-    width: 10%;
-}
-#leftA {
-    width: 15%;
-}
-
+#floating-letters{
+    /*border: solid darkred;*/
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: min-content;
+    img {
+        width: 100px;
+        height: 100%;
+    }
+    #leftA {
+        transform: scale(1.2);
+        position: relative;
+        left: 110px;
+        top: 15px;
+        animation: 4s ease-in-out 1s infinite alternate hoverA;
+    }
+    #leftComma {
+        transform: scale(0.3);
+        position: relative;
+        top: 45px;
+        left: 60px;
+        animation: 2.5s ease-in-out 2s infinite alternate hoverLeftComma;
+    }
+    #centerW {
+        transform: scale(0.7);
+        position: relative;
+        animation: 3s ease-in-out 2s infinite alternate hoverW;
+    }
+    #rightComma {
+        transform: scale(0.25);
+        position: relative;
+        top: 30px;
+        right: 65px;
+        animation: 2s ease-in-out infinite alternate hoverRightComma;
+    }
+    #rightA {
+        transform: scale(1.4);
+        position: relative;
+        right: 102px;
+        top: 17px;
+    }
+    #rightACopied {
+        transform: scale(-1.2, 1.2);
+        position: relative;
+        right: 110px;
+        top: 15px;
+        animation: 6s ease-in-out 2s infinite alternate hoverA;
+    }
+ }
