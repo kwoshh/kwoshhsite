@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Cybertalk Soft";
+  src:
+    url("/FONTS/kurnowhere/fonts2/En/LumineSignBold.woff") format("woff2"),
+    url("/FONTS/kurnowhere/fonts2/En/LumineSignBold.woff2") format("woff");
+}
+body {
+    background-color: #29574d;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10em;
+    margin: 45px 10px;
+    font-family: "Cybertalk Soft";
+}

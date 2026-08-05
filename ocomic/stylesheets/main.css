@@ -74,3 +74,15 @@ header {
         animation: 6s ease-in-out 2s infinite alternate hoverA;
     }
  }
+
+#read-button-container {
+    border: red dashed 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+        img {
+            width: 70%;
+        }
+    }
+}
