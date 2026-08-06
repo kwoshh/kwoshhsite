@@ -4,15 +4,78 @@
     url("/FONTS/kurnowhere/fonts2/En/LumineSignBold.woff") format("woff2"),
     url("/FONTS/kurnowhere/fonts2/En/LumineSignBold.woff2") format("woff");
 }
+@keyframes colorWheel{
+    from {color: #feda8f;}
+    to {color: #e26fff;}
+}
 body {
     background-color: #29574d;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    text-align: center;
-    font-size: 10em;
-    margin: 45px 10px;
-    font-family: "Cybertalk Soft";
+header {
+    h1 {
+        text-align: center;
+        font-size: 10em;
+        color: #feda8f;
+        margin: 10px 10px;
+        padding: 0;
+        font-family: "Cybertalk Soft";
+        background-color: #36427d;
+        box-shadow: 20px 20px black;
+
+        span {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    margin: 44px 89px;
+    padding: 0;
+    border: dashed red;
+    box-shadow: 40px 40px #007f02;
+}
+.letter {
+    animation-name: colorWheel;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.letter:nth-child(1) {
+    animation-delay: 0s;
+}
+.letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.letter:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.letter:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+
+#about-box {
+    h2 {
+        text-align: center;
+        text-decoration: underline wavy;
+    }
+    p {
+        text-align: center;
+    }
+    background-color: #D53032;
+    color: #424632;
+    border: 5px black solid;
+    margin: 100px 120px;
+    padding: 10px
 }
