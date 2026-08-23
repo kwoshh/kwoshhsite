@@ -4,6 +4,12 @@
     url("/FONTS/kurnowhere/fonts2/En/LumineSignBold.woff") format("woff2"),
     url("/FONTS/kurnowhere/fonts2/En/LumineSignBold.woff2") format("woff");
 }
+@font-face {
+    font-family: "Marola";
+    src:
+        url("/FONTS/Marola.woff2") format("woff2"),
+        url("/FONTS/Marola.woff") format("woff");
+}
 @keyframes colorWheel{
     from {color: #feda8f;}
     to {color: #e26fff;}
@@ -19,9 +25,9 @@ header {
         text-align: center;
         font-size: 10em;
         color: #feda8f;
-        margin: 10px 10px;
+        margin: 10px 9px;
         padding: 0;
-        font-family: "Cybertalk Soft";
+        font-family: Marola;
         background-color: #36427d;
         box-shadow: 20px 20px black;
 
@@ -67,6 +73,7 @@ header {
 
 #about-box {
     h2 {
+        font-size: 2.5em;
         text-align: center;
         text-decoration: underline wavy;
     }
@@ -79,3 +86,28 @@ header {
     margin: 100px 120px;
     padding: 10px
 }
+
+#proj_list {
+    margin: 0 auto 50px;
+    width: 400px;
+    border: dotted 10px #84C3BE;
+    text-align: center;
+    h3 {
+        font-size: 2em;
+        color: #E4A010;
+        background-color: #343B29;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+.project {
+    text-align: left;
+    border: solid black;
+    margin: 10px;
+    h4 {
+        font-size: 1.5em;
+        margin: 10px auto;
+    }
+}
+
+
