@@ -102,11 +102,19 @@ header {
 }
 .project {
     text-align: left;
-    border: solid black;
+    border: dashed 10px #cfaaf1;
+    background-color: #b9e592;
     margin: 10px;
     h4 {
+        color: #d45079;
         font-size: 1.5em;
         margin: 10px auto;
+        a {
+            color: blue;
+        }
+    }
+    p {
+        color: #475716;
     }
 }
 

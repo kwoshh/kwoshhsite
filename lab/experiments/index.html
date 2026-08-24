@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testing</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            #my_canvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>first canvas</h1>
+            <p>ah, the memories</p>
+            <canvas id="my_canvas" height="480" width="640">
+            </canvas>
+        </main>
+        <script>
+            const canvas = document.getElementById("my_canvas");
+            const ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(0, 0, 150, 75);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(0, 405, 150, 75);
+            ctx.fillStyle = "brown";
+            ctx.fillRect(490, 405, 150, 75);
+            ctx.fillStyle = "pink";
+            ctx.fillRect(490, 0, 150, 75);
+
+            ctx.moveTo(0,0);
+            ctx.lineTo(640, 480);
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(320, 240, 50, 0, 2*Math.PI);
+            ctx.strokeStyle = "grey";
+            ctx.lineWidth = 10;
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "purple";
+            ctx.lineCap = "butt";
+            ctx.moveTo(50,50);
+            ctx.lineTo(250, 30);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "black";
+            ctx.lineCap = "square";
+            ctx.moveTo(50,50);
+            ctx.lineTo(250, 70);
+            ctx.stroke();
+
+            ctx.fillStyle = "black";
+            ctx.font = "60px Arial";
+            ctx.fillText("this is kinda ugly", 30, 200);
+        </script>
+    </body>
+</html>
