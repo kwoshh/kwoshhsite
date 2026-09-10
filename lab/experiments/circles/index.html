@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>circles</title>
+    <style>
+        body {
+    background-color: white;
+}
+#game_window {
+    border: solid black;
+}
+    </style>
+</head>
+<body>
+    <h1>circles</h1>
+    <canvas id="game_window" width="640" height="480"></canvas>
+    <script>
+        const canvas = document.getElementById("game_window");
+        const ctx = canvas.getContext("2d");
+
+        canvas.addEventListener("click", function() {
+            let randR = Math.floor(Math.random()*255);
+            let randG = Math.floor(Math.random()*255);
+            let randB = Math.floor(Math.random()*255);
+
+            ctx.beginPath();
+            ctx.arc(Math.floor(Math.random() * 640), Math.floor(Math.random() * 480), 50, 0, 2*Math.PI);
+            ctx.strokeStyle = `rgb(${randR}, ${randG}, ${randB})`;
+            ctx.lineWidth = 10;
+            ctx.stroke();
+        })
+
+        ctx.beginPath();
+        ctx.arc(5, 240, 50, 0, 2*Math.PI);
+        ctx.strokeStyle = "grey";
+        ctx.lineWidth = 3;
+        ctx.stroke();
+    </script>
+</body>
+</html>
