@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			#canvas {
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>yt tutorial</h1>
+		<a href="https://www.youtube.com/watch?v=l2YMRUDRqGA">this video</a>
+		<canvas id="canvas" width="600" height="600"></canvas>
+
+		<script>
+			const canvas = Document.getElementById("canvas");
+			const ctx = canvas.getContext("2d");
+
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+
+			canvas.addEventListener("click", drawci)
+		</script>
+	</body>
+</html>
