@@ -1,0 +1,41 @@
+body {
+    font-family: "Atkinson Hyperlegible";
+    text-align: center;
+    background-color: #2B1752;
+    color:rgb(255, 229, 149)
+}
+h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 20px;
+}
+#checkbox_div {
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    border: solid rgb(255, 229, 149);
+    border-radius: 5px;
+    width: 200px;
+    input {
+        margin: 10px;
+        border: solid 3px rgb(255, 229, 149);
+    }
+}
+button {
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    font-family: "Atkinson Hyperlegible";
+    font-weight: bold;
+    background-color: #5c30b4;
+    color: #2B1752;
+}
+#value {
+    margin-top: 10px;
+    font-size: 3em;
+    text-decoration: underline wavy;
+}
